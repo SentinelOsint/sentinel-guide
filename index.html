@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sentinel User Guide</title>
-<meta name="description" content="User guide for Sentinel – Field Intelligence 3.9.9: Safety Before Contact, Pre-Contact Assessment, screening and search tools, Map View, Image Forensics, cases, reports, security and plans.">
+<meta name="description" content="User guide for Sentinel – Field Intelligence 3.10.2: Safety Before Contact, Pre-Contact Assessment, screening and search tools, Map View, Image Forensics, case photos, reports, security and plans.">
 <style>
 :root{
   --bg:#ffffff; --text:#14181f; --muted:#5a6473; --line:#e2e6ec;
@@ -89,9 +89,9 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
   <div class="wrap">
     <p class="kicker">SENTINEL – FIELD INTELLIGENCE</p>
     <h1 class="title">User Guide</h1>
-    <p class="sub">Version 3.9.9 · Updated November 5, 2026</p>
+    <p class="sub">Version 3.10.2 · Updated November 2026</p>
     <p class="actions">
-      <a class="btn" href="Sentinel-User-Guide-3.9.9.pdf" download>Download PDF</a>
+      <a class="btn" href="Sentinel-User-Guide.pdf" download>Download PDF</a>
       <a class="btn ghost" href="https://apps.apple.com/us/app/sentinel-field-intelligence/id6761101801" target="_blank" rel="noopener">App Store (U.S.)</a>
       <a class="btn ghost" href="https://apps.apple.com/ca/app/sentinel-field-intelligence/id6761101801" target="_blank" rel="noopener">App Store (Canada)</a>
     </p>
@@ -105,9 +105,29 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <ul>
 <li><strong>A name match is never treated as an identity.</strong> Every match stays “unverified” until a date of birth, address or ID number confirms it.</li>
 <li><strong>A check that cannot run is marked unavailable, never shown as a clean result.</strong></li>
-<li><strong>Your case data stays on your device,</strong> encrypted, with no cloud sync. Sentinel’s server does not keep a history of your searches or a profile of you.</li>
+<li><strong>Your case data stays on your device,</strong> encrypted, with no cloud sync. Sentinel’s server does not store your searches, results or AI prompts.</li>
 </ul>
 <p>AI does the first pass. The professional makes the call.</p>
+<h2 id="what-you-can-do-with-it">What you can do with it</h2>
+<ul>
+<li><strong>Know who you are about to meet.</strong> Every person search runs 10 official wanted, sanctions and exclusion checks automatically, including the FBI, Interpol, OFAC, the UN and the HHS exclusion list, before any AI.</li>
+<li><strong>Work a missing-person or locate case.</strong> NamUs, Canada’s Missing, obituaries and genealogy sources sit in one group, next to courts, social media and public safety resources.</li>
+<li><strong>See the address before you go.</strong> Drop a pin and look at the street in Apple’s Look Around: entrances, parking, sightlines, the way out.</li>
+<li><strong>Prove a photo has not changed.</strong> Case photos are stored encrypted with the SHA-256 fingerprint of the original. One tap later shows whether the file still matches.</li>
+<li><strong>See where and when a photo was taken,</strong> when the file still carries that data, and put it on the map.</li>
+<li><strong>Keep it private.</strong> Cases, photos and notes are encrypted on your device. No cloud, no search history on the server, and one shake locks the app.</li>
+</ul>
+<h2 id="built-for-the-field-not-the-desk">Built for the field, not the desk</h2>
+<p>Most investigation software is built for a desk: a browser, a login, a database. Sentinel is built for the moment before contact, on the phone or iPad you already carry.</p>
+<ul>
+<li><strong>It goes where you go.</strong> The checks, the map, the case file and the camera are in one app, in the car or at the door.</li>
+<li><strong>Evidence goes straight into the case.</strong> A photo taken in Sentinel is encrypted into the case with its SHA-256 fingerprint and the time it was taken. Nothing to transfer to a computer later.</li>
+<li><strong>See the approach, not just the address.</strong> Pins for target, staging and exit, and Apple’s Look Around at street level.</li>
+<li><strong>Notes by voice.</strong> Dictate field notes while it is fresh.</li>
+<li><strong>No account, no cloud.</strong> Nothing to sign up for. Your case file stays encrypted on your device, behind Face ID, and one shake locks it.</li>
+<li><strong>Monthly through Apple.</strong> No contract, no setup fee; cancel any time in your Apple account.</li>
+</ul>
+<p><strong>What Sentinel is not:</strong> it is not a people-search or skip-trace database, and it does not replace the data provider you already use. It is the tool you carry to the door.</p>
 <h2 id="about-the-developer">About the developer</h2>
 <p>Sentinel was built by <strong>Hannu Huttunen</strong>, a security professional with more than 30 years of experience in investigations, security intelligence, executive protection and corporate security, including 11 years teaching corporate security and risk management. He built the tool he wanted in the field: fast, honest about uncertainty, and private by design.</p>
 <p>Sentinel is independent and is not affiliated with or endorsed by any government agency.</p>
@@ -117,6 +137,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <ol type="1">
 <li><a href="#getting-started">Getting started</a></li>
 <li><a href="#the-home-screen">The home screen</a></li>
+<li><a href="#what-happens-behind-each-button">What happens behind each button</a></li>
 <li><a href="#safety-before-contact">Safety Before Contact</a></li>
 <li><a href="#pre-contact-assessment">Pre-Contact Assessment</a></li>
 <li><a href="#screening-tools">Screening tools</a></li>
@@ -124,9 +145,12 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li><a href="#map-view">Map View</a></li>
 <li><a href="#image-forensics">Image Forensics</a></li>
 <li><a href="#cases-and-field-work">Cases and field work</a></li>
+<li><a href="#case-photos">Case photos</a></li>
 <li><a href="#reports">Reports</a></li>
 <li><a href="#reading-the-results">Reading the results</a></li>
 <li><a href="#example-investigating-a-harassment-case">Example: investigating a harassment case</a></li>
+<li><a href="#example-locating-a-missing-adult">Example: locating a missing adult</a></li>
+<li><a href="#example-finding-a-witness-or-debtor">Example: finding a witness or debtor</a></li>
 <li><a href="#security-and-privacy">Security and privacy</a></li>
 <li><a href="#plans-and-limits">Plans and limits</a></li>
 <li><a href="#lawful-use">Lawful use</a></li>
@@ -140,7 +164,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li>Canada: <a href="https://apps.apple.com/ca/app/sentinel-field-intelligence/id6761101801" target="_blank" rel="noopener" class="uri">https://apps.apple.com/ca/app/sentinel-field-intelligence/id6761101801</a></li>
 </ul>
 <p>The first time you unlock Sentinel, a <strong>7-day free trial</strong> starts automatically. There is no sign-up and no payment card, and the trial never turns into a paid plan on its own. While the trial is active, the home screen shows <code>Free trial · N days left</code> with a <code>View Plans</code> button. Deleting and reinstalling the app does not restart the trial.</p>
-<p>The trial includes 5 Pre-Contact searches per day, 5 Field Briefs, 1 other AI analysis and 1 Web Brief for the whole trial. Full Analysis requires Essential or Pro. See <a href="#plans-and-limits">Plans and limits</a>.</p>
+<p>The trial includes everything except the AI features: 5 Pre-Contact searches per day, every automated check, all guided sources, Safety Before Contact, Map View with Look Around, Image Forensics (without the AI interpretation), cases with photos, notes and PDF export. Field Brief, Full Analysis, Web Brief and the other AI features come with Essential and Pro. Tap <code>See a sample brief</code> to see what a Field Brief looks like. See <a href="#plans-and-limits">Plans and limits</a>.</p>
 <h2 id="unlocking-the-app">Unlocking the app</h2>
 <p>Sentinel opens on a lock screen and uses the protection your device already has:</p>
 <ul>
@@ -148,9 +172,9 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li><strong>Your device passcode</strong> if Face ID and Touch ID are not set up.</li>
 <li><strong>No device passcode at all:</strong> Sentinel shows <code>No Device Passcode</code> and asks you to set one. You can continue with <code>Continue without protection</code>, but anyone holding your unlocked phone could then open your cases. Set a passcode in iOS Settings.</li>
 </ul>
-<p>Sentinel locks again every time it goes to the background, after the auto-lock timeout (15 minutes by default), and immediately when you shake the phone. After 5 failed attempts it waits 30 seconds, and the wait doubles with each further 5 failed attempts.</p>
+<p>Sentinel asks for Face ID again when you come back to it, locks fully after the auto-lock timeout (15 minutes by default), and locks immediately when you shake the phone. See <a href="#locking">Locking</a>. After 5 failed attempts it waits 30 seconds, and the wait doubles with each further 5 failed attempts.</p>
 <h2 id="ai-consent">AI consent</h2>
-<p>The first time you start an AI feature (for example <code>Generate Field Brief</code>), Sentinel asks for permission with an alert titled <code>AI analysis</code>. It explains that the information you submit for that analysis is sent through Sentinel’s server to Anthropic, which provides the Claude AI models. You can choose <code>Allow</code>, <code>Not now</code> or read the <code>Privacy Policy</code>.</p>
+<p>AI features are part of Essential and Pro, so during the free trial this question does not appear. The first time a subscriber starts an AI feature (for example <code>Generate Field Brief</code>), Sentinel asks for permission with an alert titled <code>AI analysis</code>. It explains that the information you submit for that analysis is sent through Sentinel’s server to Anthropic, which provides the Claude AI models. What is sent depends on the feature: typically what you searched for, your role and purpose, the results and any notes the analysis uses. Sentinel’s server passes it on without storing it; Anthropic processes it under its own terms, described in the Privacy Policy. You can choose <code>Allow</code>, <code>Not now</code> or read the <code>Privacy Policy</code>.</p>
 <ul>
 <li><code>Not now</code>: nothing is sent, and you can keep working without AI.</li>
 <li><code>Allow</code>: Sentinel remembers your choice. You can withdraw it at any time in <strong>Security › Privacy › Withdraw AI data sharing</strong>.</li>
@@ -233,6 +257,51 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </tr>
 </tbody>
 </table></div>
+<h1 id="what-happens-behind-each-button">What happens behind each button</h1>
+<p>Every button in Sentinel does one of four things. Knowing which one tells you what you can rely on, what leaves your device and what it costs.</p>
+<div class="tw"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kind of button</th>
+<th>What happens</th>
+<th>What leaves your device</th>
+<th>Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Automatic check</strong> (for example the 10 checks in a person search, Sanctions &amp; Export Screening)</td>
+<td>Sentinel itself checks the name against the official list and shows the result in the app</td>
+<td>the name, sent to Sentinel’s server, which checks it against the official lists (the FBI check goes directly from the app to the FBI’s public wanted list, with the last name only). The server does not store your searches</td>
+<td>1 daily search for a Pre-Contact search. No AI</td>
+</tr>
+<tr class="even">
+<td><strong>Automatic lookup</strong> (phone country, mail domain, IP network, domain DNS, VIN decode, Image Forensics)</td>
+<td>Sentinel looks up technical facts and shows them in the app</td>
+<td>only what the lookup needs: an email’s domain (not the address), the IP, the domain, the VIN, the photo for analysis. A phone number’s country is worked out on the device</td>
+<td>no AI</td>
+</tr>
+<tr class="odd">
+<td><strong>Guided link</strong> (marked ↗, tagged <code>name filled in</code> or <code>opens search page</code>)</td>
+<td>opens the source’s own website in your browser. Sentinel does not search it for you</td>
+<td>whatever you search on that site, under that site’s own terms</td>
+<td>nothing</td>
+</tr>
+<tr class="even">
+<td><strong>AI button</strong> (<code>Generate Field Brief</code>, <code>Full Analysis</code>, <code>Generate Web Brief</code>, <code>AI Analysis</code> and the case AI buttons)</td>
+<td>sends the information through Sentinel’s server to Anthropic’s Claude models and shows a written analysis. Web Brief also uses Anthropic’s web search</td>
+<td>what you searched for, your role and purpose, the results (for example list matches) and any case notes the analysis uses. Not your subscription ID, install ID or IP address. Only with your consent</td>
+<td>AI analyses or Web Briefs (Essential and Pro)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Everything you save, such as cases, notes, photos, pins and Field Briefs, stays encrypted on your device. PDFs are created on the device and leave it only when you share them.</p>
 <h1 id="safety-before-contact">Safety Before Contact</h1>
 <p><strong>Know the risk before you knock.</strong> Safety Before Contact puts the public safety resources that matter most before a first contact one tap away: sex offender registries, wanted lists, custody and release status, and court records.</p>
 <p>It sits right under <strong>New Pre-Contact Assessment</strong> on the home screen. The line under the title says it plainly: <code>Opens in your browser. Not checked automatically.</code> Sentinel opens each official site in your browser; it does not search these sites for you.</p>
@@ -393,19 +462,86 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </tbody>
 </table></div>
 <p>The detected type appears at the top of the results as <strong>DETECTED TARGET</strong>.</p>
-<h2 id="automated-checks">Automated checks</h2>
+<h2 id="automatic-checks-and-results">Automatic checks and results</h2>
+<p>Right after the search, before any AI, Sentinel shows what it checked automatically.</p>
 <div class="gallery">
 <figure>
-<img loading="lazy" src="img/09_precontact_results.jpg" alt="DETECTED TARGET with “9 of 9 automatic checks completed” and GUIDED CHECKS" />
-<figcaption aria-hidden="true">DETECTED TARGET with “9 of 9 automatic checks completed” and GUIDED CHECKS</figcaption>
+<img loading="lazy" src="img/33_automatic_checks_match.jpg" alt="AUTOMATIC CHECKS with a name match: identity unverified" />
+<figcaption aria-hidden="true">AUTOMATIC CHECKS with a name match: identity unverified</figcaption>
+</figure>
+<figure>
+<img loading="lazy" src="img/34_automatic_checks_clear.jpg" alt="AUTOMATIC CHECKS with no matches in the 10 lists checked" />
+<figcaption aria-hidden="true">AUTOMATIC CHECKS with no matches in the 10 lists checked</figcaption>
+</figure>
+<figure>
+<img loading="lazy" src="img/35_automatic_results_domain.jpg" alt="AUTOMATIC RESULTS for a domain" />
+<figcaption aria-hidden="true">AUTOMATIC RESULTS for a domain</figcaption>
 </figure>
 </div>
-<p>For a <strong>person name</strong>, Sentinel automatically checks 9 sources: FBI Most Wanted, Interpol Red Notices, OFAC SDN, UN Security Council, BIS Denied Persons, EU Consolidated, Canada Autonomous, the U.S. Consolidated Screening List and the UK Sanctions List.</p>
-<p>For a <strong>company</strong>, it checks the U.S. Consolidated Screening List and the UK Sanctions List.</p>
-<p>The counter next to DETECTED TARGET shows how many checks completed, for example <code>9 of 9 automatic checks completed</code>. A check that could not run does not count as completed and is shown as unavailable.</p>
-<p>Phone numbers, emails, IP addresses and domains have no automatic list checks; their results are guided links and technical data.</p>
+<p>For a <strong>person name</strong>, Sentinel automatically checks 10 sources: FBI Most Wanted, Interpol Red Notices, OFAC SDN, UN Security Council, BIS Denied Persons, EU Consolidated, Canada Autonomous, the U.S. Consolidated Screening List, the UK Sanctions List and the HHS OIG exclusion list (LEIE).</p>
+<p>For a <strong>company</strong>, it checks the U.S. Consolidated Screening List, the UK Sanctions List and the HHS OIG exclusion list.</p>
+<p>The counter next to DETECTED TARGET shows how many checks completed, for example <code>10 of 10 automatic checks completed</code>. Under it, the <strong>AUTOMATIC CHECKS</strong> card lists every source with its result:</p>
+<div class="tw"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Result</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>✅ <code>No match</code></td>
+<td>The name was not found in that list</td>
+</tr>
+<tr class="even">
+<td>🚨 <code>Name match: verify identity</code></td>
+<td>The name was found. The details from the list (name, list or program, country, date of birth, aliases) appear under the row when the list has them</td>
+</tr>
+<tr class="odd">
+<td>⚠️ <code>Unavailable</code></td>
+<td>The source could not be reached. This is never shown as a clean result</td>
+</tr>
+</tbody>
+</table></div>
+<p>The card’s headline sums it up: red <code>Name match found: identity unverified</code>, orange <code>Incomplete: N check(s) unavailable</code>, or green <code>No matches in the N lists checked</code>.</p>
+<p>For a <strong>phone number, email, IP address or domain</strong>, the <strong>AUTOMATIC RESULTS</strong> card shows what Sentinel looked up:</p>
+<div class="tw"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Search</th>
+<th>Automatic results</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Phone</td>
+<td>Country from the calling code, and the area code for +1 numbers (worked out on your device)</td>
+</tr>
+<tr class="even">
+<td>Email</td>
+<td>The domain, its mail servers (MX) and SPF record. Only the domain is looked up, not the full address</td>
+</tr>
+<tr class="odd">
+<td>IP address</td>
+<td>Country, network and ASN</td>
+</tr>
+<tr class="even">
+<td>Domain</td>
+<td>IP address, hosting provider, DNS records and the latest SSL certificate (crt.sh)</td>
+</tr>
+</tbody>
+</table></div>
+<p>None of this uses AI. <strong>Field Brief</strong>, <strong>Full Analysis</strong> and <strong>Web Brief</strong> come right below.</p>
 <h2 id="guided-checks-person-names">GUIDED CHECKS (person names)</h2>
-<p>After a person search, <strong>GUIDED CHECKS</strong> shows the next steps in four groups. The line under the title says: <code>Opens in your browser. Not checked automatically.</code></p>
+<p>Below the AI options, <strong>GUIDED CHECKS</strong> shows the next steps in five groups. Tap a group to open it. The line under the title says: <code>Opens in your browser. Not checked automatically.</code></p>
 <div class="gallery">
 <figure>
 <img loading="lazy" src="img/11_guided_checks_us.jpg" alt="Guided checks, United States" />
@@ -417,11 +553,19 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </figure>
 </div>
 <ol type="1">
-<li><strong>Safety before contact</strong> is open by default and follows your country choice: sex offender registries, wanted lists and (U.S.) custody and release.</li>
+<li><strong>Safety before contact</strong> follows your country choice: sex offender registries, wanted lists and (U.S.) custody and release.</li>
 <li><strong>Identity &amp; online presence</strong>: name searches on LinkedIn, Facebook and X (these three require you to sign in), TikTok, YouTube and more.</li>
 <li><strong>Courts &amp; records</strong>: PACER, CourtListener, UniCourt, Google Scholar and Canadian directory links.</li>
-<li><strong>Money &amp; affiliations</strong>: FEC individual contributions, LinkedIn and professional license lookups.</li>
+<li><strong>Money &amp; affiliations</strong>: FEC individual contributions, LinkedIn and License Lookup (NIPR).</li>
+<li><strong>Missing persons &amp; obituaries</strong>: NamUs (U.S. Missing Persons, U.S. Department of Justice), Canada’s Missing (RCMP National Centre for Missing Persons and Unidentified Remains), then genealogy and historical records: FamilySearch, Ancestry, FindAGrave, Fold3, Newspapers.com, MyHeritage and Legacy.com obituary search.</li>
 </ol>
+<div class="gallery">
+<figure>
+<img loading="lazy" src="img/39_missing_persons.jpg" alt="Missing persons &amp; obituaries open: NamUs, Canada’s Missing and genealogy sources" />
+<figcaption aria-hidden="true">Missing persons &amp; obituaries open: NamUs, Canada’s Missing and genealogy sources</figcaption>
+</figure>
+</div>
+<p>NamUs, Canada’s Missing and Legacy.com open on their own search page, and you type the name there. NamUs and Canada’s Missing are also under Criminal &amp; Public Safety for their country.</p>
 <p>Each link is tagged <strong>name filled in</strong> (the name is already in the search) or <strong>opens search page</strong> (you type the name on the site).</p>
 <blockquote>
 <p><strong>FEC note.</strong> FEC rules prohibit using contributor information for commercial purposes or to solicit contributions. The note is shown under the link.</p>
@@ -429,15 +573,22 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <h2 id="more-results">More results</h2>
 <p>Below GUIDED CHECKS, <strong>SUPPORTING INTELLIGENCE SOURCES</strong> lists every result group for your input type. Groups marked <code>QUERY EXECUTED</code> ran automatically; groups marked <code>AVAILABLE</code> contain links. Tap a link to open it. Long-press a link to tag it as <code>Evidence</code>, <code>Lead</code> or <code>Verified</code> while you work.</p>
 <h2 id="field-brief">Field Brief</h2>
-<p>Tap <strong>Generate Field Brief</strong> for a short AI-assisted summary. It uses 1 AI analysis (in the trial, 1 of your 5 trial Field Briefs). A Field Brief contains:</p>
+<p>Tap <strong>Generate Field Brief</strong> for a short AI-assisted summary (Essential and Pro). It uses 1 AI analysis. A Field Brief contains:</p>
+<div class="gallery">
+<figure>
+<img loading="lazy" src="img/40_field_brief.jpg" alt="A Field Brief for a company: 138 Entity List entries share the name, identity confidence INSUFFICIENT" />
+<figcaption aria-hidden="true">A Field Brief for a company: 138 Entity List entries share the name, identity confidence INSUFFICIENT</figcaption>
+</figure>
+</div>
 <ul>
-<li><strong>AUTOMATED CHECKS</strong>: one row per check with <code>No match</code>, <code>Match</code> or <code>Unavailable</code>.</li>
+<li><strong>AUTOMATED CHECKS</strong>: one row per list with <code>No match</code>, <code>Match</code> (with the number of entries found, for example <code>Match (138)</code>) or <code>Unavailable</code>.</li>
 <li><strong>RISK FLAGS</strong>: from real matches only, with severity and source.</li>
 <li><strong>IDENTITY CONFIDENCE</strong>: how sure the identification is, and why.</li>
 <li><strong>TOP CHECKS BEFORE CONTACT</strong>: what to verify next, for your role.</li>
 <li><strong>OPERATIONAL NOTE</strong> and <strong>NOT AUTOMATICALLY CHECKED</strong>.</li>
 </ul>
-<p>Every Field Brief is saved in <strong>Field Briefs</strong> on the home screen. In the trial, tap <strong>See a sample brief</strong> to see a complete example on a fictional subject without using AI.</p>
+<p><strong>Where to find it later.</strong> Every Field Brief is saved automatically in Home › TOOLS &amp; RECORDS › <strong>Field Briefs</strong> (newest first, up to 200) and in History. If a case is active, it is also added to the case as a note. Opening a saved brief costs nothing. If a brief cannot be saved, Sentinel tells you (<code>Brief not saved</code>) and the brief stays on screen.</p>
+<p>In the trial, tap <strong>See a sample brief</strong> to see a complete example on a fictional subject.</p>
 <h2 id="full-analysis">Full Analysis</h2>
 <p><strong>Full Analysis</strong> goes deeper: identity confidence, confirmed and supported findings, possible associations, risk indicators, contradictions, information gaps, recommended verification and operational considerations. It uses <strong>2 AI analyses</strong> and requires Essential or Pro.</p>
 <ul>
@@ -447,7 +598,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li>Set the <strong>ASSESSMENT STATUS</strong> (<code>Draft</code>, <code>Verification Req.</code>, <code>Ready for Review</code>, <code>Reviewed</code>, <code>Locked</code>). <code>Save to Case</code> saves the brief as a new case.</li>
 </ul>
 <h2 id="web-brief">Web Brief</h2>
-<p><strong>Generate Web Brief</strong> runs a live web search and writes a source-cited summary. It uses 1 Web Brief (trial 1, Essential 20 per month, Pro 50 per month).</p>
+<p><strong>Generate Web Brief</strong> runs a live web search and writes a source-cited summary. It uses 1 Web Brief: Essential 20 per month, Pro 30 per month (10 in the first 14 days of a subscription). Web Brief is not in the trial.</p>
 <h2 id="what-uses-ai">What uses AI</h2>
 <div class="tw"><table>
 <colgroup>
@@ -467,14 +618,14 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </tr>
 <tr class="even">
 <td>Field Brief</td>
-<td>1 AI analysis (trial: 1 of 5 trial Field Briefs)</td>
+<td>1 AI analysis</td>
 </tr>
 <tr class="odd">
 <td>Full Analysis, and each regenerate</td>
 <td>2 AI analyses (Essential and Pro)</td>
 </tr>
 <tr class="even">
-<td>Relationship Map, Client-Ready Summary</td>
+<td>Relationship Map, Client-Ready Summary (Pro)</td>
 <td>1 AI analysis each</td>
 </tr>
 <tr class="odd">
@@ -487,6 +638,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </tr>
 </tbody>
 </table></div>
+<p>AI features are included in Essential and Pro. The free trial includes no AI.</p>
 <h1 id="screening-tools">Screening tools</h1>
 <h2 id="sanctions-export-screening">Sanctions &amp; Export Screening</h2>
 <p>Screens a person or company against the <strong>U.S. Consolidated Screening List</strong>, official U.S. government data that includes the SDN List, the Entity List and the Denied Persons List, and the <strong>UK Sanctions List</strong>. Screening is included in every plan, including the trial, and does not use AI.</p>
@@ -535,14 +687,14 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li>Search the name there. For a match, the OIG site lets you verify it against a Social Security Number (individuals) or an Employer Identification Number (businesses), and shows the exclusion type and date.</li>
 <li>Record what you verified, where and when, in your case notes.</li>
 </ol>
-<p>Each result also shows the data date (<code>Data as of</code>) and the source. Always verify on the OIG website before acting. The Healthcare Exclusion Check is a separate tool; it is not part of the Pre-Contact search.</p>
+<p>Each result also shows the data date (<code>Data as of</code>) and the source. Always verify on the OIG website before acting. The same list is also checked automatically in every Pre-Contact person and company search.</p>
 <p><strong>Typical uses.</strong> An insurance special investigation unit checking a billing provider or clinic; due diligence on the owners or partners of a health care business before a deal; a fraud investigation into whether an excluded person is working under another name or through another company.</p>
 <blockquote>
 <p><strong>Not for employment screening.</strong> Sentinel is not a consumer reporting agency. Do not use this check to decide whether to hire someone, including a caregiver. Health care employers check the LEIE directly on the OIG website.</p>
 </blockquote>
 <p>Both screening tools end with: <em>Sentinel is an independent tool and is not affiliated with or endorsed by the U.S. Government.</em> If a list cannot be reached, you see <code>Screening unavailable</code>, never a clean result.</p>
 <h1 id="search-tools">Search tools</h1>
-<p>Every tool works the same way: enter a value, tap the button, read the results. Rows marked ↗ open in your browser, rows marked ⎘ copy a value. After a search you can use <code>AI Analysis</code> (1 AI analysis), <code>Generate Web Brief</code> on supported tools, <code>Add to Active Case</code> when a case is active, and <code>↓ Export PDF</code> (Pro and trial). Long-press any result row to save it to Field Notes.</p>
+<p>Every tool works the same way: enter a value, tap the button, read the results. Rows marked ↗ open in your browser, rows marked ⎘ copy a value. After a search you can use <code>AI Analysis</code> (1 AI analysis), <code>Generate Web Brief</code> on supported tools, <code>Add to Active Case</code> when a case is active, and <code>↓ Export PDF</code> (every plan). AI Analysis and Web Brief are in Essential and Pro. Long-press any result row to save it to Field Notes.</p>
 <div class="tw"><table>
 <colgroup>
 <col style="width: 25%" />
@@ -593,7 +745,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <td><strong>Criminal &amp; Public Safety</strong></td>
 <td>a name, company or case number</td>
 <td>nothing</td>
-<td>U.S.: NSOPW, VINE, CourtListener, PACER, trafficking hotlines. Canada: Alberta and Manitoba notices, 11 police wanted pages, CanLII</td>
+<td>U.S.: NSOPW, VINE, NamUs, CourtListener, PACER, trafficking hotlines. Canada: Alberta and Manitoba notices, 11 police wanted pages, Canada’s Missing, CanLII</td>
 </tr>
 <tr class="odd">
 <td><strong>IP &amp; Network</strong></td>
@@ -661,7 +813,8 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <ul>
 <li>Choose <strong>Standard</strong>, <strong>Satellite</strong> or <strong>Hybrid</strong> above the map. Sentinel remembers your choice.</li>
 <li>Type an address in <strong>Search an address</strong> and tap the search button. One match moves the map there; several show a list to choose from. The address you type is sent to Apple to find the location, only when you search, and Sentinel does not store it.</li>
-<li>Map tiles need an internet connection. Saved pins stay on your device.</li>
+<li>The found address stays under the map until you tap the map, choose a pin, clear the search field or save it with <code>Save as pin</code>.</li>
+<li>Address search and map tiles need an internet connection. Without one, the search shows <code>Address lookup failed. Check your internet connection and try again.</code> Saved pins stay on your device.</li>
 </ul>
 <h2 id="your-location">Your location</h2>
 <p>Tap the <strong>locate</strong> button (top right of the map) to show where you are. Sentinel asks for location permission only when you tap it. If you have allowed it before, the map opens on your position. Sentinel never stores or sends your location.</p>
@@ -672,13 +825,37 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li>Tap <strong>Drop Pin</strong>.</li>
 </ol>
 <p>Tap a pin under <strong>PINNED LOCATIONS</strong> to see its details. From there you can <code>Save to Notes</code>, <code>Edit</code> (title, note, type, case, color) or <code>Delete</code> it.</p>
+<h2 id="look-around">Look Around</h2>
+<p>See a place at street level before you go: entrances, parking, sightlines and the way out.</p>
+<div class="gallery">
+<figure>
+<img loading="lazy" src="img/32_look_around_pin_card.jpg" alt="Look Around preview in a pin’s details" />
+<figcaption aria-hidden="true">Look Around preview in a pin’s details</figcaption>
+</figure>
+<figure>
+<img loading="lazy" src="img/31_look_around_fullscreen.jpg" alt="Apple Look Around, opened from Sentinel’s map" />
+<figcaption aria-hidden="true">Apple Look Around, opened from Sentinel’s map</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Open a pin’s details, or search for an address.</li>
+<li>Sentinel checks whether Apple has Look Around imagery for that point. If it does, a <strong>Look Around preview</strong> appears in the pin details (above <code>Save to Notes</code>, <code>Edit</code> and <code>Delete</code>) or under the found address.</li>
+<li>Tap the preview. Apple’s full-screen Look Around opens: drag to look around, tap the street to move, and tap <strong>X</strong> to return to the same map view.</li>
+</ol>
+<p>Good to know:</p>
+<ul>
+<li>Look Around is Apple’s imagery and is available mainly in larger cities. Where there is none, Sentinel shows <code>Look Around is not available at this location.</code></li>
+<li>Apple blurs faces and license plates. The imagery has a capture date (shown at the bottom), so the place may look different today.</li>
+<li>To check availability and show the imagery, the coordinate of the pin or found address is sent to Apple. Nothing else is sent with it: not the pin’s title, note or case.</li>
+<li>Look Around needs iOS 16 or later. On iPad it is shown when Sentinel fills the screen, not in Split View or Stage Manager.</li>
+</ul>
 <h2 id="pins-in-a-case">Pins in a case</h2>
 <p>The easiest way to plan an approach for a case:</p>
 <ol type="1">
 <li>Open the case (Home › <strong>Active Cases</strong> › your case).</li>
 <li>Under <strong>Map Pins</strong>, tap <strong>Add pin</strong>. The map opens with the case already selected, and a banner reads <code>Tap map to drop a pin for</code> followed by the case name.</li>
 <li>Drop your pins: the target address, your staging point, your way out.</li>
-<li>Tap <strong>‹</strong> to return to the case. The pins are listed under Map Pins and in the case PDF report (Pro and trial).</li>
+<li>Tap <strong>‹</strong> to return to the case. The pins are listed under Map Pins and in the case PDF report.</li>
 </ol>
 <p>Tapping a pin in the case’s Map Pins list opens it on the map.</p>
 <h2 id="show-on-map">Show on map</h2>
@@ -688,6 +865,8 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li><strong>Geo / OSINT</strong>, after a search (coordinates, or an address that Apple looks up).</li>
 <li><strong>A case’s Map Pins list.</strong></li>
 </ul>
+<h2 id="a-location-is-a-lead">A location is a lead</h2>
+<p>A point on the map is only as good as its source. An address found by Apple’s search, a pin you drop, the GPS in a photo and the country of an IP address are all approximations, and none of them shows where a person is now. Apple’s Look Around imagery can be months or years old. Confirm an address on the ground and from records before you act on it, and never treat a map position alone as proof that someone lives or works there.</p>
 <h1 id="image-forensics">Image Forensics</h1>
 <p>Analyzes a photo from your library. Home › IMAGES › <strong>Image Forensics</strong>.</p>
 <div class="gallery">
@@ -717,8 +896,9 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <p><strong>iPhone HEIC photos</strong> are supported. Sentinel’s server converts a copy to JPEG for the analysis, and a note says so: compression and ELA results describe the converted copy, while metadata and the SHA-256 hash come from the original file.</p>
 <h2 id="good-to-know">Good to know</h2>
 <ul>
-<li><strong>AI use:</strong> every run ends with the AI interpretation and uses 1 AI analysis. In the trial, that is the trial’s single AI analysis. If you answer <code>Not now</code> to the AI question, or your AI analyses are used up, all other results still appear and the AI card tells you why it is missing.</li>
-<li><strong>The photo</strong> is sent to Sentinel’s server for analysis, processed in memory and not stored. The AI receives the results as text, not the photo.</li>
+<li><strong>AI use:</strong> on Essential and Pro, every run ends with the AI interpretation and uses 1 AI analysis. In the trial, every step runs except the AI interpretation. If you answer <code>Not now</code> to the AI question, or your AI analyses are used up, all other results still appear and the AI card tells you why it is missing.</li>
+<li><strong>Add to case:</strong> <code>Add to case</code> stores the photo in a case, encrypted, with its SHA-256, the time it was taken, its GPS (if any) and a summary of the analysis. See <a href="#case-photos">Case photos</a>.</li>
+<li><strong>The photo</strong> is sent to Sentinel’s server for analysis, processed in memory and not stored on the server. The AI receives the results as text, never the photo itself. That text includes the photo’s metadata, and its GPS location if the photo has one.</li>
 <li><strong>No GPS?</strong> Many apps and services remove location data when a photo is shared, and some photos are taken with location turned off. Sentinel says so: <em>No GPS data in this photo.</em></li>
 <li><strong>Where a photo was taken is not who sent it.</strong> GPS shows where the camera was, not who shared the image or where they are now.</li>
 <li><strong>Keep the original file.</strong> Ask for the original file (for example as an email attachment), not a screenshot. A screenshot does not carry the original’s metadata.</li>
@@ -740,28 +920,28 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </div>
 <p>Home › <strong>Active Cases</strong> (screen <code>Case Management</code>).</p>
 <ol type="1">
-<li>Tap <strong>+ New</strong>, enter a <strong>Case Title</strong> (required), subject, location, objective, priority and tags, and tap <strong>Create Case</strong>.</li>
+<li>Tap <strong>+ New</strong>, enter a <strong>Case Title</strong> (required), subject, location, objective, priority and tags (including <code>Missing Person</code> and <code>Legal Support</code>), add photos if you have them, and tap <strong>Create Case</strong>. The new-case form keeps what you have entered, photos included, even if Sentinel locks or you open another screen. Only <code>Discard</code> deletes the draft.</li>
 <li>Open a case to see its details and sections:
 <ul>
 <li><strong>Set Active:</strong> while a case is active, every search is logged to it.</li>
-<li><strong>↓ Export PDF</strong> (Pro and trial): the case report.</li>
+<li><strong>↓ Export PDF</strong> (every plan): the case report, with a PHOTOS section.</li>
 <li><strong>AI Report</strong> and <strong>AI Summary</strong> (1 AI analysis each; AI Summary needs at least one note).</li>
 <li><strong>Status:</strong> <code>ACTIVE</code>, <code>PENDING</code>, <code>CLOSED</code>.</li>
-<li><strong>Field Notes</strong>, <strong>Post-Contact Updates</strong> (an AI summary of what happened after contact, 1 AI analysis), <strong>Map Pins</strong> and <strong>Search Log</strong>.</li>
+<li><strong>Field Notes</strong>, <strong>Post-Contact Updates</strong> (an AI summary of what happened after contact, 1 AI analysis), <strong>Map Pins</strong>, <strong>Photos</strong> and <strong>Search Log</strong>.</li>
 <li><strong>Delete This Case</strong> removes the case and its data permanently.</li>
 </ul></li>
 </ol>
-<p>Pro and trial users can also search their cases in plain language (1 AI analysis per search).</p>
+<p>The AI buttons in a case are part of Essential and Pro. Pro users can also search their cases in plain language (1 AI analysis per search). Essential holds up to 3 cases; the trial and Pro up to 999.</p>
 <h2 id="new-case-intake">New Case Intake</h2>
-<p>Home › <strong>New Case Intake</strong>. Enter or dictate subject information, choose a case type, add background and special concerns, and tap <strong>Run AI Pre-Assessment</strong>. You get a risk score from 0 to 100, case complexity, pricing guidance, key findings, red flags and recommended actions. Nothing is saved to a case automatically.</p>
+<p>Home › <strong>New Case Intake</strong>. Enter or dictate subject information, choose a case type, add background and special concerns, and tap <strong>Run AI Pre-Assessment</strong> (Essential and Pro; in the trial the form opens without the AI button). You get a risk score from 0 to 100, case complexity, pricing guidance, key findings, red flags and recommended actions. Nothing is saved to a case automatically.</p>
 <h2 id="dictation">Dictation</h2>
 <p>Tap the microphone in Case Intake or Field Notes and speak; tap again to stop. Dictation uses iOS speech recognition in U.S. English, which can need an internet connection. The first time, iOS asks for Microphone and Speech Recognition permission.</p>
 <h2 id="field-notes-timeline-history-field-briefs">Field Notes, Timeline, History, Field Briefs</h2>
 <ul>
-<li><strong>Field Notes:</strong> tap <strong>+ Add</strong>, pick a tag (General, Person, Vehicle, Location, Financial, Digital, Legal, Evidence, Lead, Follow-up) and write or dictate. If a case is active, the note is also saved to the case. <code>AI Note Analysis</code> summarizes your notes (1 AI analysis).</li>
-<li><strong>Timeline:</strong> your activity log, grouped by date. <code>Generate AI Investigation Summary</code> writes key findings, risk indicators and open questions (1 AI analysis).</li>
+<li><strong>Field Notes:</strong> tap <strong>+ Add</strong>, pick a tag (General, Person, Vehicle, Location, Financial, Digital, Legal, Evidence, Lead, Follow-up) and write or dictate. If a case is active, the note is also saved to the case. <code>AI Note Analysis</code> summarizes your notes (1 AI analysis, Essential and Pro).</li>
+<li><strong>Timeline:</strong> your activity log, grouped by date. <code>Generate AI Investigation Summary</code> writes key findings, risk indicators and open questions (1 AI analysis, Essential and Pro).</li>
 <li><strong>History:</strong> every search (up to 200). <code>Clear</code> empties it. Password checks are never recorded.</li>
-<li><strong>Field Briefs:</strong> every Field Brief you have generated. Opening one costs nothing.</li>
+<li><strong>Field Briefs:</strong> every Field Brief you have generated, newest first (up to 200). Opening one costs nothing.</li>
 </ul>
 <h2 id="watch-list">Watch List</h2>
 <p>Home › <strong>Watch List</strong>. Add a <strong>person</strong>, <strong>domain</strong>, <strong>IP</strong> or <strong>phone</strong> target. Sentinel checks active targets about once a day in the background (iOS decides the exact time) and sends a notification when something changes:</p>
@@ -771,6 +951,46 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li><strong>person / phone:</strong> the number of alert markers in a repeated Pre-Contact search changed.</li>
 </ul>
 <p>The first check records a baseline. A check that could not run changes nothing. Tap <strong>Check All Now</strong> for an immediate check.</p>
+<h1 id="case-photos">Case photos</h1>
+<p>Photos of an address, a vehicle, a document or a scene belong with the case, not in your camera roll. Sentinel keeps them inside the case, encrypted, with proof that they have not changed.</p>
+<div class="gallery">
+<figure>
+<img loading="lazy" src="img/36_case_photos.jpg" alt="A case with photos: Add photo and Take photo, up to 20 per case" />
+<figcaption aria-hidden="true">A case with photos: Add photo and Take photo, up to 20 per case</figcaption>
+</figure>
+<figure>
+<img loading="lazy" src="img/37_photo_details.jpg" alt="Photo details: caption, time taken, SHA-256 of the original and the GPS switch" />
+<figcaption aria-hidden="true">Photo details: caption, time taken, SHA-256 of the original and the GPS switch</figcaption>
+</figure>
+<figure>
+<img loading="lazy" src="img/38_forensics_case_photo.jpg" alt="Analyze from the case: “Matches the SHA-256 stored in the case.”" />
+<figcaption aria-hidden="true">Analyze from the case: “Matches the SHA-256 stored in the case.”</figcaption>
+</figure>
+</div>
+<h2 id="adding-photos">Adding photos</h2>
+<ol type="1">
+<li>Open a case, or start a new one with <strong>+ New</strong>.</li>
+<li>Under <strong>PHOTOS</strong>, tap <strong>Add photo</strong> to choose from your library, or <strong>Take photo</strong> to use the camera. A case holds up to 20 photos.</li>
+<li>Tap a photo to open <strong>Photo details</strong>: add a caption, and see when it was added and taken, the file type and size, the SHA-256 of the original and, if the photo has it, its GPS location.</li>
+</ol>
+<h2 id="what-keeps-them-safe">What keeps them safe</h2>
+<ul>
+<li><strong>Encrypted inside Sentinel.</strong> Each photo is encrypted with AES-256-GCM using the case’s key. Case photos do not appear in the Photos app or in any other app.</li>
+<li><strong>The camera does not save to your library.</strong> A photo taken with <strong>Take photo</strong> exists only inside the case.</li>
+<li><strong>A photo you add from your library stays in your library too.</strong> Sentinel stores its own encrypted copy. If the photo should exist only in the case, delete it from Photos yourself.</li>
+<li><strong>Temporary copies are removed.</strong> The copies iOS makes while a photo is being added are deleted right away. If the app is closed in the middle, the leftovers are removed the next time you unlock Sentinel.</li>
+<li><strong>GPS stays private by default.</strong> If the photo carries a location, it is stored with the photo, but it is shown in the case PDF only when you turn on <code>Show GPS in the case PDF</code> for that photo. The switch is off by default.</li>
+<li><strong>Backups.</strong> The encrypted photo files can be included in your iPhone backup, but they cannot be opened without this device’s encryption key. Restored on another device, a photo shows as <code>Photo unreadable</code>.</li>
+</ul>
+<h2 id="proving-a-photo-has-not-changed">Proving a photo has not changed</h2>
+<p>When a photo is added, Sentinel records the <strong>SHA-256</strong> of the original file. To check it later, open the photo and tap <strong>Analyze</strong>: Image Forensics opens the original, decrypted in memory only, and shows <code>Matches the SHA-256 stored in the case.</code> if the file is unchanged. The case PDF includes reduced copies of the photos, with a note that the SHA-256 refers to the original file.</p>
+<h2 id="deleting-photos">Deleting photos</h2>
+<ul>
+<li><strong>One photo:</strong> delete it from the case’s PHOTOS section.</li>
+<li><strong>A whole case:</strong> <code>Delete This Case</code> deletes the case and all its photos.</li>
+<li><strong>Everything:</strong> <code>Wipe All Data</code> deletes all cases and photos and destroys the encryption keys. Deleting does not overwrite the storage chip; what makes any leftover unreadable is that the key no longer exists.</li>
+</ul>
+<p><strong>Rotate Encryption Keys</strong> (Security) re-encrypts the case photos too, one at a time, with a progress text.</p>
 <h1 id="reports">Reports</h1>
 <p>All PDFs are created on your device and shared through the iOS share sheet. Nothing is uploaded.</p>
 <div class="tw"><table>
@@ -800,16 +1020,16 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <tr class="odd">
 <td>Any tool screen</td>
 <td><code>↓ Export PDF</code>: the tool’s results with sources and retrieval times</td>
-<td>Pro and trial</td>
+<td>every plan</td>
 </tr>
 <tr class="even">
 <td>A case</td>
-<td><code>↓ Export PDF</code>: case overview, research log, field notes and the MAP PINS table</td>
-<td>Pro and trial</td>
+<td><code>↓ Export PDF</code>: case overview, research log, field notes, the MAP PINS table and the PHOTOS section</td>
+<td>every plan</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Branding:</strong> in <strong>Security › PDF Report Branding</strong>, enter your firm name, investigator name and license number. They are added to the four Pre-Contact reports exported after a Full Analysis.</p>
+<p><strong>Branding:</strong> in <strong>Security › PDF Report Branding</strong>, enter your firm name, investigator name and license number. They are added to the four Pre-Contact reports exported after a Full Analysis, not to tool or case PDFs.</p>
 <h1 id="reading-the-results">Reading the results</h1>
 <div class="tw"><table>
 <thead>
@@ -871,9 +1091,50 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li><strong>Timeline:</strong> incidents in order. In harassment cases, repetition and sequence often matter most.</li>
 <li><strong>Confirm / Reject / Review:</strong> mark each finding in a Full Analysis.</li>
 <li><strong>Map View:</strong> pin the places where incidents happened and link the pins to the case.</li>
-<li><strong>PDF report:</strong> hand the record to your client, their attorney or law enforcement. The case PDF is available in Pro and the trial; on Essential, export the Pre-Contact report.</li>
+<li><strong>Photos:</strong> keep screenshots and photos of what the client received in the case, with their SHA-256 fingerprints.</li>
+<li><strong>PDF report:</strong> hand the record to your client, their attorney or law enforcement.</li>
 </ul>
 <p>Every result is a lead to verify, not a conclusion. The investigator makes the call.</p>
+<h1 id="example-locating-a-missing-adult">Example: locating a missing adult</h1>
+<p>A family asks you to find their adult brother, Marcus Whitfield (a fictional name), who stopped answering calls two months ago. They have his last known address, an old phone number and a few photos.</p>
+<blockquote>
+<p><strong>If the person may be at risk,</strong> the family should report them missing to the police first. Sentinel supports your work; it does not replace a police report.</p>
+</blockquote>
+<p><strong>1. Open the case</strong></p>
+<p>Create a case (<code>Whitfield – Locate</code>) with the tag <code>Missing Person</code>. Add the family’s photos under <strong>PHOTOS</strong>, with a caption for each. Set the case active so every search is logged to it.</p>
+<p><strong>2. Check what the photos can tell you</strong></p>
+<p>Open each photo in <strong>Image Forensics</strong> (<code>Analyze</code>). If a photo still carries GPS, <code>Show on map</code> puts the point on the map: that is where the camera was when the photo was taken, not where he is now. Many shared photos carry no location at all.</p>
+<p><strong>3. Run the name</strong></p>
+<p>Run a <strong>Pre-Contact Assessment</strong> on his full name, with the old phone number on a second line. The 10 automatic checks run first. Then open <strong>GUIDED CHECKS</strong>:</p>
+<ul>
+<li><strong>Missing persons &amp; obituaries:</strong> search his name in NamUs and Canada’s Missing (you type the name on each site), then the obituary and genealogy sources, including Legacy.com. Ruling out the worst news early matters to the family.</li>
+<li><strong>Identity &amp; online presence:</strong> recent posts, a new city, a new employer.</li>
+<li><strong>Courts &amp; records:</strong> a recent case can show a new address or county.</li>
+<li><strong>Safety before contact:</strong> custody status in VINE (U.S.) can explain a sudden silence.</li>
+</ul>
+<p><strong>4. Plan the visit</strong></p>
+<p>Pin the last known address in <strong>Map View</strong>, look at it in <strong>Look Around</strong>, and add staging and exit pins to the case.</p>
+<p><strong>5. Record and report</strong></p>
+<p>Log each step in <strong>Field Notes</strong>. When you find him, the decision belongs to him: an adult has the right not to be found. Many investigators confirm that the person is safe and pass on the family’s message rather than disclosing a location without consent. Export the case PDF for your client.</p>
+<p><strong>What Sentinel does not do here:</strong> it does not search NamUs, Canada’s Missing or Legacy.com for you, it has no address history or people-search data, and it does not link to NCMEC or local police missing-person lists.</p>
+<h1 id="example-finding-a-witness-or-debtor">Example: finding a witness or debtor</h1>
+<p>An attorney needs a former employee, Laura Bennett (a fictional name), served with a subpoena. You have her name, an old phone number and a city.</p>
+<p><strong>1. Set the role</strong></p>
+<p>In Pre-Contact Assessment, choose the <strong>Process Server</strong> role. Sentinel moves PERSON INTELLIGENCE, Public Records and Professional Records to the top of the results.</p>
+<p><strong>2. Run the search</strong></p>
+<p>Enter her name and the phone number on separate lines. Then:</p>
+<ul>
+<li><strong>Courts &amp; records:</strong> CourtListener, UniCourt, PACER and Google Scholar (and CanLII in Canada). Other cases often carry a more recent address.</li>
+<li><strong>Public records</strong> (Canada): Canada411 and Canada White Pages. Sentinel does not link to U.S. people-search sites.</li>
+<li><strong>Identity &amp; online presence</strong> and <strong>Money &amp; affiliations:</strong> a current employer, a professional license (NIPR), a new city.</li>
+<li><strong>Missing persons &amp; obituaries:</strong> before anything else, make sure you are not looking for someone who has died.</li>
+<li><strong>Phone Lookup:</strong> the number’s country and area code, and spam-report sites.</li>
+</ul>
+<p><strong>3. Before you knock</strong></p>
+<p>Open <strong>Safety before contact</strong>: registries, wanted lists and VINE. If she is in custody, service goes through the facility. Pin the address, check it in Look Around, and add staging and exit pins.</p>
+<p><strong>4. Document the service</strong></p>
+<p>Take photos with <strong>Take photo</strong> inside the case: the address, the door, the time. Each one is stored with its SHA-256 and the time it was taken. Add a field note and export the case PDF for the affidavit of service.</p>
+<p><strong>Rules that apply:</strong> Sentinel is not a consumer reporting agency, so do not use it for eligibility decisions. If you locate debtors for a collection matter, the Fair Debt Collection Practices Act and state rules govern how you may contact third parties.</p>
 <h1 id="security-and-privacy">Security and privacy</h1>
 <p><strong>Your case file stays on your device.</strong></p>
 <div class="gallery">
@@ -896,19 +1157,34 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </div>
 <ul>
 <li><strong>Always under your control.</strong> Sentinel lives on the iPhone or iPad in your pocket, locked behind Face ID, Touch ID or your passcode. One shake locks it instantly.</li>
-<li><strong>On your device, encrypted.</strong> Cases, notes, history, saved briefs, pins and settings are encrypted with AES-256-GCM, on top of iPhone’s own encryption. The keys are kept in the iOS Keychain, on this device only.</li>
-<li><strong>Nothing in the cloud.</strong> There is no cloud sync and no telemetry. Sentinel’s server does not keep a history of your searches or a profile of you.</li>
-<li><strong>Gone in seconds, for good.</strong> <strong>Wipe All Data</strong> deletes your cases, notes, history and settings and destroys the encryption keys. What is left cannot be read.</li>
+<li><strong>On your device, encrypted.</strong> Cases, case photos, notes, history, saved briefs, pins and settings are encrypted with AES-256-GCM, on top of iPhone’s own encryption. The keys are kept in the iOS Keychain, on this device only.</li>
+<li><strong>Nothing in the cloud.</strong> There is no cloud sync and no telemetry. Sentinel’s server does not store your searches, results or AI prompts.</li>
+<li><strong>Gone for good.</strong> <strong>Wipe All Data</strong> deletes your cases, notes, history and settings and destroys the encryption keys. What is left cannot be read.</li>
 <li><strong>Lost or stolen?</strong> Erase the device remotely with Apple’s Find My, and Sentinel’s data goes with it.</li>
 </ul>
+<h2 id="locking">Locking</h2>
+<div class="gallery">
+<figure>
+<img loading="lazy" src="img/41_security_autolock.jpg" alt="Auto-Lock Timeout and the lock explanation in Security Settings" />
+<figcaption aria-hidden="true">Auto-Lock Timeout and the lock explanation in Security Settings</figcaption>
+</figure>
+</div>
+<p>Sentinel has two kinds of lock.</p>
+<ul>
+<li><strong>Leaving the app</strong> (switching to Safari, the home screen or another app) covers Sentinel’s screen. When you come back, Face ID or your passcode opens it exactly as you left it: search results, an open case, a new-case draft, Image Forensics.</li>
+<li><strong>Auto-lock timeout or a shake</strong> locks it fully: the encryption keys are wiped from memory, results on screen are cleared and you sign in again. If you were away longer than the timeout, the lock is full too.</li>
+</ul>
+<p><strong>Shake to lock.</strong> Shake the phone and Sentinel locks fully at once. Use it when someone walks up or you hand the phone over.</p>
+<p><strong>Nothing is usable while locked.</strong> Open windows (a note, a photo, a pin, Sections) are hidden until you unlock, and alert buttons do nothing. If a share sheet, the photo picker or the camera is open when you leave the app, Sentinel closes it and locks fully.</p>
+<p>Choose the timeout in <strong>Security › Auto-Lock Timeout</strong>: 1, 5, 15 (recommended) or 30 minutes, 1 hour, or Never (not recommended). Typing in an open window counts as activity.</p>
 <h2 id="security-settings">Security Settings</h2>
 <p>Home › TOOLS &amp; RECORDS › <strong>Security</strong>:</p>
 <ul>
 <li><strong>Subscription:</strong> your plan, and <code>Manage Subscription</code> in the App Store.</li>
 <li><strong>Privacy:</strong> AI data sharing on or off, and the Privacy Policy.</li>
 <li><strong>Help:</strong> <code>User Guide</code> and <code>Support</code>.</li>
-<li><strong>Encryption:</strong> AES-256-GCM, iOS Keychain, and <strong>Rotate Encryption Keys</strong> (a new key, all data re-encrypted).</li>
-<li><strong>Auto-Lock Timeout:</strong> 1 minute to 1 hour, or Never. 15 minutes is recommended.</li>
+<li><strong>Encryption:</strong> AES-256-GCM, iOS Keychain, and <strong>Rotate Encryption Keys</strong> (a new key; all data, case photos included, re-encrypted).</li>
+<li><strong>Auto-Lock Timeout:</strong> see <a href="#locking">Locking</a>.</li>
 <li><strong>Device Integrity:</strong> <strong>Run Security Scan</strong> checks for jailbreak indicators, a physical device, debug mode, a device passcode and the iOS version, and gives a score out of 100.</li>
 <li><strong>Audit Log:</strong> an encrypted record of security events (up to 500 entries). <code>View Log</code> and <code>Export</code>.</li>
 <li><strong>API Keys:</strong> your own keys for AbuseIPDB, GreyNoise and Shodan, stored on the device.</li>
@@ -917,10 +1193,10 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </ul>
 <h2 id="when-features-go-online">When features go online</h2>
 <p>Sentinel is not an offline app. Automated checks, AI features, Image Forensics, maps, dictation and lookups connect to Sentinel’s server or to the service behind them when you use them, and guided links open the source site in your browser.</p>
-<p>What Sentinel does not do: its server does not keep a history of your searches or a profile of you, and there is no account that ties your searches to you. Your cases, notes and history stay encrypted on your device.</p>
+<p>What Sentinel does not do: its server does not store your searches, results or AI prompts. It keeps only usage counts per subscription and installation, to apply the plan limits. There is no user account to sign up for, and your searches are not recorded together with your subscription. Your cases, notes and history stay encrypted on your device.</p>
 <p>The details are in the Privacy Policy: <a href="https://sentinelosint.github.io/sentinel-privacy/" target="_blank" rel="noopener" class="uri">https://sentinelosint.github.io/sentinel-privacy/</a></p>
 <h2 id="what-wipe-all-data-does">What Wipe All Data does</h2>
-<p>Wipe All Data asks twice, then deletes cases, notes, history, saved Field Briefs, the Watch List, settings (including AI consent, API keys, pins and branding) and the audit log, and destroys the encryption keys. It does not reset the free trial or your usage counters, and your subscription stays active. Photos in your library and PDFs you have already shared are outside Sentinel and are not affected.</p>
+<p>Wipe All Data asks twice, then deletes cases, case photos, the new-case draft, notes, history, saved Field Briefs, the Watch List, settings (including AI consent, API keys, pins and branding) and the audit log, and destroys the encryption keys. It does not reset the free trial or your usage counters, and your subscription stays active. Photos in your library and PDFs you have already shared are outside Sentinel and are not affected.</p>
 <h1 id="plans-and-limits">Plans and limits</h1>
 <div class="tw"><table>
 <colgroup>
@@ -951,28 +1227,52 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <td>no daily limit</td>
 </tr>
 <tr class="odd">
-<td>Field Briefs</td>
-<td>5 for the trial</td>
-<td>1 AI analysis each</td>
-<td>1 AI analysis each</td>
+<td>Automatic checks, guided sources, Safety Before Contact</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
 </tr>
 <tr class="even">
-<td>AI analyses</td>
-<td>1 for the trial</td>
-<td>20 per month</td>
-<td>100 per month (50 in the first 14 days)</td>
+<td>Map View with Look Around, Image Forensics, case photos</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
 </tr>
 <tr class="odd">
-<td>Full Analysis (counts as 2)</td>
-<td>not available</td>
+<td>PDF export from searches, tools and cases</td>
 <td>yes</td>
 <td>yes</td>
+<td>yes</td>
+</tr>
+<tr class="even">
+<td>AI features (Field Brief, Full Analysis, Web Brief, AI interpretation)</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr class="odd">
+<td>AI analyses (Field Brief 1, Full Analysis 2)</td>
+<td>none</td>
+<td>20 per month</td>
+<td>100 per month (30 in the first 14 days)</td>
 </tr>
 <tr class="even">
 <td>Web Briefs</td>
-<td>1 for the trial</td>
+<td>none</td>
 <td>20 per month</td>
-<td>50 per month</td>
+<td>30 per month (10 in the first 14 days)</td>
+</tr>
+<tr class="odd">
+<td>Full Analysis report types with your branding</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr class="even">
+<td>AI Client-Ready Summary, AI case search</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
 </tr>
 <tr class="odd">
 <td>Cases</td>
@@ -987,18 +1287,6 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <td>up to 999</td>
 </tr>
 <tr class="odd">
-<td>PDF export from tools and cases</td>
-<td>yes</td>
-<td>no</td>
-<td>yes</td>
-</tr>
-<tr class="even">
-<td>AI Client-Ready Summary, AI case search</td>
-<td>yes</td>
-<td>no</td>
-<td>yes</td>
-</tr>
-<tr class="odd">
 <td>Sources</td>
 <td>19 official lists checked automatically, 150+ public sources</td>
 <td>same</td>
@@ -1006,8 +1294,10 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 </tr>
 </tbody>
 </table></div>
+<p><strong>Essential or Pro?</strong> Every plan has the same sources, methodology and security. Essential suits an investigator who works a few cases at a time and wants the AI features. Pro is for a full caseload: unlimited daily searches, up to 999 cases and watch targets, five times the AI analyses, the AI client summary and AI case search.</p>
+<p><strong>The first 14 days on Pro.</strong> During the first 14 days of your subscription, Pro is limited to 30 AI analyses and 10 Web Briefs. After that, the full monthly allowance is available. The 14 days are counted from the start of your first Sentinel subscription; renewals do not restart them. If you reach a first-days limit, Sentinel tells you when the full allowance opens.</p>
 <ul>
-<li>Every plan has the same sources, methodology and security. Pro adds capacity and advanced reporting.</li>
+<li>A Full Analysis counts as two AI analyses.</li>
 <li>Monthly counters reset at the start of each month (UTC).</li>
 <li>Subscriptions are monthly through Apple. You can subscribe during the trial (Home › <code>View Plans</code>, or Security › Subscription) and manage or cancel in your Apple account settings. Prices are set by the App Store and shown in the app in your currency.</li>
 </ul>
@@ -1027,6 +1317,9 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <p><strong>Why don’t I see a GPS location for my photo?</strong> The photo has no GPS data. Location may have been off when it was taken, or it was removed when the photo was shared.</p>
 <p><strong>Why does a check say unavailable?</strong> The source could not be reached. Sentinel never shows a failed check as a clean result. Try again later.</p>
 <p><strong>Does Sentinel check the sex offender registries automatically?</strong> No. Safety Before Contact opens the official sites in your browser.</p>
+<p><strong>Where do I find a Field Brief I made earlier?</strong> Home › TOOLS &amp; RECORDS › <strong>Field Briefs</strong>. If a case was active, it is also in the case’s notes.</p>
+<p><strong>Can someone see my case photos in the Photos app?</strong> No. Case photos are encrypted inside Sentinel. A photo you added from your library is still in your library until you delete it there.</p>
+<p><strong>Why does the trial not include AI?</strong> The trial lets you try everything that runs without AI: the automatic checks, guided sources, maps, Image Forensics, cases and PDFs. AI features come with Essential and Pro.</p>
 <p><strong>Can I use Sentinel without AI?</strong> Yes. Answer <code>Not now</code> to the AI question, or withdraw AI data sharing in Security › Privacy. Searches, automated checks, guided links, maps, cases and notes all work without AI.</p>
 <p><strong>Does Wipe All Data restart my trial?</strong> No. Trial and usage counters are kept so that wiping data cannot reset them.</p>
 <p><strong>What happens when my trial ends?</strong> Sentinel shows a plans screen. Your data is kept on the device and is available again when you subscribe.</p>
@@ -1036,7 +1329,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0 16px}
 <li>Privacy Policy: <a href="https://sentinelosint.github.io/sentinel-privacy/" target="_blank" rel="noopener" class="uri">https://sentinelosint.github.io/sentinel-privacy/</a></li>
 <li>App Store (U.S.): <a href="https://apps.apple.com/us/app/sentinel-field-intelligence/id6761101801" target="_blank" rel="noopener" class="uri">https://apps.apple.com/us/app/sentinel-field-intelligence/id6761101801</a></li>
 <li>App Store (Canada): <a href="https://apps.apple.com/ca/app/sentinel-field-intelligence/id6761101801" target="_blank" rel="noopener" class="uri">https://apps.apple.com/ca/app/sentinel-field-intelligence/id6761101801</a></li>
-<li>Demo videos: <a href="https://www.youtube.com/@SentinelFieldIntelligence/shorts" target="_blank" rel="noopener" class="uri">https://www.youtube.com/@SentinelFieldIntelligence/shorts</a></li>
+<li>Videos: <a href="https://www.youtube.com/@SentinelFieldIntelligence" target="_blank" rel="noopener" class="uri">https://www.youtube.com/@SentinelFieldIntelligence</a></li>
 <li>Support: sentinelosintapp@protonmail.com</li>
 </ul>
 <hr />
